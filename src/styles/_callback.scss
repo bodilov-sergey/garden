@@ -1,0 +1,119 @@
+.callback {
+    background: linear-gradient(180deg, #fcfafa 0, #fafafa80 22.9%, #fafafa80 100%),
+        url("/assets/images/callback/callback.jpg") 100% 0 / cover no-repeat;
+    overflow: hidden;
+    position: relative;
+    padding: 207px 0 82px;
+    font-size: 0.2vw;
+    @media (min-width: 576px) {
+        font-size: 1px;
+    }
+    @media (min-width: 768px) {
+        padding: 132px 0 150px;
+        font-size: 0.7px;
+    }
+    @media (min-width: 992px) {
+        font-size: 1px;
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__clipart {
+        pointer-events: none;
+        position: absolute;
+        width: 650px;
+
+        &:nth-child(1) {
+            top: -207px;
+            left: -435px;
+        }
+        @media (min-width: 768px) {
+            &:nth-child(1) {
+                top: auto;
+                bottom: -345px;
+                left: 12%;
+                transform: translateX(-100%);
+            }
+            &:nth-child(2) {
+                z-index: 2;
+                bottom: -300px;
+                right: 15%;
+                transform: translateX(100%);
+            }
+        }
+    }
+
+    &__window {
+        position: relative;
+        border-radius: 10px;
+        display: flex;
+        background: #fcfafa;
+    }
+
+    &__content {
+        padding: 40em;
+        width: auto;
+        @media (min-width: 576px) {
+            padding: 45em 50em;
+        }
+    }
+
+    &__title {
+        color: #e61d4e;
+        font-weight: 600;
+        font-size: 32em;
+        margin-bottom: 0.9em;
+    }
+
+    &__info {
+        display: flex;
+        margin-bottom: 30em;
+    }
+
+    &__ico {
+        width: 40em;
+        min-width: 40em;
+        display: flex;
+        align-items: center;
+        margin: 0 23em 19em 0;
+        & img {
+            width: 100%;
+        }
+    }
+
+    &__phones {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 auto;
+        margin-right: 23em;
+    }
+
+    &__phone {
+        font-size: 24em;
+        color: #282525;
+        font-weight: 600;
+    }
+
+    &__schedule {
+        font-size: 18em;
+        flex: 0 0 auto;
+    }
+
+    &__callback {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25em;
+        @media (min-width: 992px) {
+            max-width: 360px;
+        }
+    }
+
+    &__img {
+        background: url(/assets/images/callback/operator.jpg) 0 50% / cover no-repeat;
+        border-radius: 0 10px 10px 184em;
+        width: 50%;
+        min-width: 50%;
+    }
+}

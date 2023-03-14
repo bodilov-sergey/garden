@@ -1,0 +1,87 @@
+.reviews {
+    padding-top: 110px;
+    margin-top: -60px;
+
+    @media (min-width: 576px) {
+        margin-top: -110px;
+    }
+
+    &__wrapper {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -10px;
+        justify-content: space-around;
+        @media (min-width: 576px) {
+            margin-left: -20px;
+        }
+    }
+
+    &__clipart {
+        z-index: 2;
+        position: absolute;
+        right: -10%;
+        top: 44%;
+        width: 390px;
+        transform: rotate(334deg);
+        & img {
+            width: 100%;
+        }
+        @media (min-width: 992px) {
+            top: 54%;
+        }
+    }
+
+    &__item {
+        position: relative;
+        z-index: 2;
+        max-width: 384px;
+        margin: 0 0 40px 10px;
+        width: calc(50% - 10px);
+        background: #fcfafa;
+        border-radius: 10px;
+        box-shadow: (0 15px 17px #7d142e73);
+        @media (min-width: 576px) {
+            margin-left: 20px;
+            width: calc(50% - 20px);
+        }
+        @media (min-width: 768px) {
+            width: calc(33.33% - 20px);
+        }
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 0 0 0 calc((50vw - 17px) * 0.25);
+        @media (min-width: 576px) {
+            border-radius: 0 0 0 79px;
+        }
+    }
+
+    &__text {
+        font-size: calc((50vw - 17px - (50vw - 17px) * 0.05) * 0.08);
+        padding: 15px calc((50vw - 17px) * 0.08) 15px;
+        @media (min-width: 576px) {
+            font-size: 16px;
+            padding: 20px 20px 20px;
+        }
+        @media (min-width: 992px) {
+            font-size: 18px;
+            padding: 28px 30px 30px;
+        }
+        @media (min-width: 1200px) {
+            padding: 28px 45px 40px;
+        }
+    }
+
+    &__name {
+        color: #e61d4e;
+        font-weight: 600;
+        margin-bottom: 0.5em;
+    }
+
+    &__city {
+        color: #e61d4e;
+        margin-bottom: 1em;
+    }
+}

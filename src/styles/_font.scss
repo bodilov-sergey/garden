@@ -1,0 +1,22 @@
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/Montserrat-Regular.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    src: url("./fonts/Montserrat-SemiBold.ttf") format("truetype");
+    font-display: swap;
+}

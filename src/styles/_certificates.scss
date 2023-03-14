@@ -1,0 +1,67 @@
+.certificates {
+    padding-top: 95px;
+    margin-top: -70px;
+    @media (min-width: 768px) {
+        padding: 88px 0 14px;
+        margin-top: 0;
+    }
+
+    &__container {
+        padding: 0;
+        @media (min-width: 768px) {
+            padding: 0 12px;
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+        z-index: 2;
+        margin: 35% 0 33%;
+        @media (min-width: 768px) {
+            margin: 18% 0 16%;
+        }
+    }
+
+    &__slider {
+        overflow-x: auto;
+        display: flex;
+        padding-left: 10%;
+        &::-webkit-scrollbar {
+            height: 0;
+        }
+    }
+
+    &__computer {
+        position: absolute;
+        z-index: -1;
+        top: -20%;
+        bottom: -39%;
+        left: 0;
+        transform: translateX(-65%);
+        & img {
+            height: 100%;
+        }
+    }
+
+    &__item {
+        width: 70%;
+        flex: 0 0 auto;
+        @media (min-width: 768px) {
+            flex: 1 1 auto;
+        }
+        & img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        & > div {
+            margin-left: 5%;
+        }
+        &:last-child img {
+            margin-right: 29%;
+
+            @media (min-width: 768px) {
+                margin-right: 0;
+            }
+        }
+    }
+}

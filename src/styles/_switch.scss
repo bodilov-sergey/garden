@@ -1,0 +1,82 @@
+.main-btn {
+    position: relative;
+    background: linear-gradient(180deg, #e61d4e 0%, #c9214a 100%);
+    border-radius: 0.9375em;
+    padding: 0.9375em 1.6875em;
+    font-weight: 600;
+    font-size: 16em;
+    color: #fff;
+    box-shadow: 0 0.2em 0.4em rgb(125 20 46 / 45%);
+    text-align: center;
+    transition-property: box-shadow;
+    &:hover {
+        box-shadow: (0 0.2em 0.4em rgb(125 20 46 / 45%)), inset 0 0 6em #ff2b60;
+    }
+}
+
+.secondary-btn {
+    color: #e61d4e;
+    transition-property: text-shadow;
+    font-size: 16em;
+    text-align: start;
+    &:hover {
+        text-shadow: 0.5px -0.5px 0 #e61d4e;
+        color: #e61d4e;
+    }
+}
+
+.main-input-user {
+    width: 100%;
+    border: 1px solid #e61d4e;
+    border-radius: 0.9375em;
+    height: 3.125em;
+    padding: 0 1.5625em;
+    font-size: 16em;
+    background: none;
+}
+
+.main-input-text {
+    max-width: 9.1em;
+    border: 1px solid #e61d4e;
+    border-radius: 0.9375em;
+    height: 2.5em;
+    padding: 0 1.5625em;
+    font-size: 16em;
+    color: #e61d4e;
+    font-weight: 600;
+    text-align: center;
+    background: none;
+}
+
+.main-input-radio {
+    & input:checked ~ span {
+        background: #e61d4e;
+        color: #fcfafa;
+        box-shadow: 0 0.2em 0.4em rgb(125 20 46 / 45%);
+        cursor: auto;
+    }
+
+    & span {
+        cursor: pointer;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        display: block;
+        transition: 0.3s ease-out;
+        transition-property: color, background, box-shadow;
+        border-radius: 10px;
+        border: 1px solid #e61d4e;
+        color: #e61d4e;
+        text-align: center;
+        font-weight: 600;
+        font-size: 18em;
+        min-width: 5.5em;
+        padding: 0.625em 1.2em;
+        &:hover {
+            background: #fae6eb;
+        }
+    }
+}

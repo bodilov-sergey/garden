@@ -1,0 +1,197 @@
+.calculator {
+    background: linear-gradient(180deg, #fcfafa 0, #fbfbfb99 22.9%, #fbfbfb99 88%, #fcfafa 100%),
+        url("/assets/images/calculator/calculator.jpg") 50% / cover no-repeat;
+    padding: 100px 0 90px;
+    margin-top: -50px;
+    position: relative;
+    z-index: 1;
+    @media (min-width: 768px) {
+        padding: 168px 0 150px;
+    }
+
+    &__sheet {
+        position: absolute;
+        width: 95px;
+        bottom: -90px;
+        left: calc(50% + 50px);
+        transform: scale(-1, 1) rotate(-16deg);
+    }
+
+    &__clipart {
+        pointer-events: none;
+        position: absolute;
+
+        &:nth-child(1) {
+            @media (min-width: 576px) {
+                z-index: 2;
+                top: -7%;
+                right: 0;
+                width: 664px;
+                transform: translate(calc(100% - 35px), -50%);
+            }
+            @media (min-width: 1200px) {
+                transform: translate(calc(100% - 102px), -50%);
+            }
+            @media (min-width: 1690px) {
+                width: calc((((100vw - 1296px) * 0.5) + 102px) * 2.3);
+                max-width: 800px;
+            }
+            @media (min-width: 1788px) {
+                right: calc((-50vw + 50%) + 247px);
+            }
+        }
+
+        &:nth-child(2) {
+            @media (min-width: 576px) {
+                filter: blur(4px);
+                bottom: -370px;
+                left: 0;
+                width: 645px;
+                transform: translate(calc(-100% + 130px), 0);
+            }
+            @media (min-width: 1690px) {
+                width: calc((((100vw - 1296px) * 0.5) + 102px) * 2.3);
+                max-width: 800px;
+            }
+            @media (min-width: 1788px) {
+                left: calc((-50vw + 50%) + 247px);
+            }
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+        margin: 0 auto;
+        font-size: 0.2vw;
+        background: #fcfafa;
+        border-radius: 15px;
+        padding: 40em 40em 9em;
+        @media (min-width: 576px) {
+            font-size: 1px;
+        }
+        @media (min-width: 992px) {
+            padding: 60em 60em 29em;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 25em;
+        max-width: 888px;
+        margin: 0 auto 1.66em;
+        padding: 0 1em;
+        @media (min-width: 768px) {
+            font-size: 32em;
+        }
+    }
+
+    &__filling {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 768px) {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+
+    &__parameter {
+        display: flex;
+        align-items: baseline;
+        flex-direction: column;
+        @media (min-width: 1200px) {
+            flex-direction: row;
+        }
+    }
+
+    &__name {
+        width: 12em;
+        margin-right: 1.5em;
+        flex: 0 0 auto;
+        font-weight: 600;
+        font-size: 18em;
+        margin-bottom: 1.72em;
+    }
+
+    &__switches {
+        width: 100%;
+        column-gap: 15em;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        margin-bottom: 30em;
+        & > label {
+            flex-grow: 1;
+        }
+
+        @media (min-width: 768px) {
+            flex-grow: 0;
+        }
+
+        & > label,
+        p {
+            margin-bottom: 15em;
+        }
+    }
+
+    &__callback {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        & input {
+            margin-bottom: 1.935em;
+            margin-top: -1em;
+        }
+        & button {
+            margin-top: 2.34em;
+            margin-bottom: 1.935em;
+        }
+        @media (min-width: 768px) {
+            column-gap: 3.5%;
+            flex-direction: row;
+            & input {
+                margin-top: 0;
+                width: 31%;
+            }
+            & button {
+                margin-top: 0;
+                width: 31%;
+            }
+        }
+    }
+
+    &__result {
+        max-width: 436em;
+        margin-bottom: 36em;
+        @media (min-width: 768px) {
+            margin-left: 30em;
+        }
+        @media (min-width: 1200px) {
+            margin: 0 46em;
+            flex: 1 0 280em;
+        }
+    }
+
+    &__text {
+        font-size: 18em;
+        margin-bottom: 0.6em;
+        text-align: center;
+    }
+
+    &__list > li {
+        font-size: 18em;
+        margin-bottom: 0.6em;
+        display: flex;
+        justify-content: center;
+        & > span {
+            &:nth-child(1) {
+                flex: 1 1 auto;
+            }
+        }
+    }
+
+    &__price {
+        font-size: 48em;
+        font-weight: 700;
+        margin-bottom: 1em;
+    }
+}
