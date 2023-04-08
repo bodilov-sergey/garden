@@ -28,7 +28,16 @@
                 <div class="container">
                     <div class="nav__content">
                         <div class="nav__logo">
-                            <a href="#"><img src="./assets/images/nav/logo.png" alt="logo" /></a>
+                            <a href="#">
+                                <!-- <img src="./assets/images/nav/logo.png" alt="logo" /> -->
+
+                                <picture>
+                                    <source media="(max-width: 575px)" srcset="./assets/images/nav/logo-min.png">
+                                    <source media="(min-width: 576px)" srcset="./assets/images/nav/logo.png">
+                                    <img src="./assets/images/nav/logo.png" alt="logo">
+                                </picture>
+
+                            </a>
                             <div class="d-none d-sm-block d-md-none d-lg-block">
                                 <p class="nav__company c-main fw-bold">Company name</p>
                                 <p class="nav__slogan">Company slogan</p>
